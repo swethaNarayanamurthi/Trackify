@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/images/train image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+        }
+        header {
+            background-color: rgba(255, 123, 0, 0.788);
+            color: #fff;
+            padding: 15px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header img {
+            width: 150px;
+            margin-right: 10px;
+            border-radius: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            padding-left: 30%;
+            font-size: 300%;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 10px;
+        }
+        nav ul li a {
+            font-family: sans-serif;
+            font-size: medium;
+            color: #fff;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .about-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input[type="text"],
+        form input[type="tel"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ff7b00;
+            color: #fff;
+            cursor: pointer;
+        }
+        form button[type="submit"]:hover {
+            background-color: #b36b00c2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src='/static/images/logo.png' alt="Logo">
+        <h1>Trackify</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <main>
+        <form action="/track" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required><br>
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" required><br><br>
+            <button type="submit">Track</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div id="about" class="about-content">
+            <h2>About Trackify</h2>
+            <p>
+                Trackify is a user-friendly web application meticulously crafted to
+                streamline journey tracking and destination management. Whether embarking
+                on an adventurous road trip or simply commuting to work, Trackify offers a seamless
+                interface where users can effortlessly input essential details such as their name, destination, and phone number. By doing so, Trackify empowers users to monitor their journeys with utmost efficiency and convenience.
+            </p>
+            <p>
+                
+             At the heart of Trackify lies a profound commitment to enhancing the travel experience for all users. Our overarching goal is to eradicate the hassles often associated with travel by providing intuitive tools and reliable services. Through continuous innovation and dedication to excellence, Trackify endeavors to deliver an unparalleled user experience,
+             ensuring that every journey is tracked with precision and reliability.
+            </p>
+            <p>
+                By leveraging cutting-edge technology and user-centric design principles, Trackify remains steadfast in its mission to make travel not only efficient but also enjoyable for everyone. Whether you're embarking on a cross-country adventure or simply navigating your daily commute, Trackify is your trusted companion, dedicated to simplifying the journey and enhancing 
+                the overall travel experience.</p>
+        </div>
+    </main>
+</body>
+</html>

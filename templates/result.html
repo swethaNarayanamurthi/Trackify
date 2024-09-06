@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url('/static/images/train image.jpg');
+
+            background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px; /* Optional: to limit the maximum width */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative; /* Added to position the image */
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .message {
+            background-color: #e6f7ff;
+            border-left: 4px solid #1890ff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .train-image {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: auto;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h2>Tracking Result</h2>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Destination:</strong> {{ destination }}</p>
+        <p><strong>Phone Number:</strong> {{ phone_number }}</p>
+        <div class="message">
+            <p><strong>Message:</strong></p>
+            <p>{{ message }}</p>
+        </div>
+    </div>
+</body>
+</html>
+
